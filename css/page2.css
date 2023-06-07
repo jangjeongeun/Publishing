@@ -1,0 +1,176 @@
+.section01 {
+  color: rgb(173, 173, 173);
+  font-size: 5rem;
+  font-weight: 500;
+  border-bottom: black solid 1px;
+  box-sizing: border-box;
+  margin: 0 5%;
+  padding: 4% 0% 5% 0%;
+ /* background-color: antiquewhite; */
+ /* padding-bottom: 5%; */
+ /* padding-top: 0.5%; */
+}
+.title {
+  font-family: 'ChosunSm';
+  position: relative;
+  text-align: center;
+  transition: all 0.3s;
+}
+.section01:hover .title {color: black;}
+
+
+/* 섹션2 */
+.section02 {
+  /* border: solid 1px #000000; */
+  width: 80%;
+  height: 100%;
+  margin: 0 5%;
+  box-sizing: border-box;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding-top: 100px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.section02 > a {
+  border: #000000 1px solid;
+  width: 400px;
+  height: 600px;
+  margin: 2%;
+  box-sizing: border-box;
+  padding: 2%;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.section02 > a:link {text-decoration: none; color: black;}
+.section02 > a:visited {text-decoration: none; color: black;}
+.section02 > a:hover {scale: 105%;}
+
+.title2 {
+  font-family: 'ChosunSm';
+  font-size: 2rem;
+  border-bottom: #000000 1px solid;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.num1::before {
+  display: inline-block;
+  content: '1';
+  width: 35px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.num2::before {
+  display: inline-block;
+  content: '2';
+  width: 35px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.num3::before {
+  display: inline-block;
+  content: '3';
+  width: 35px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.imgbox1 {
+  margin-top: 20px;
+  width: 340px;
+  height: 250px;
+  overflow: hidden;
+  filter: brightness(50%);
+  transition: all 0.3s;
+}
+.imgbox1 > img {width: 150%; transition: all 0.3s; }
+.explanation {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  text-align: center;
+}
+h5 {
+  font-size: 1rem;
+  position: absolute;
+  top: 550px;
+  right: 30px;
+  color: rgb(173, 173, 173);
+  transition: all 0.3s;
+}
+.yellow { transition: all 0.3s; font-weight: 700; position: relative; }
+.yellow::after {
+  display: inline-block;
+  content: '';
+  background-color: rgb(255, 208, 0);
+  position: absolute;
+  width: 0%;
+  height: 25px;
+  margin-top: 4px;
+  left: 0%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.section02 > a:hover .yellow::after {width: 100%;}
+.section02 > a:hover .yellow {color: rgb(0, 0, 0);}
+.section02 > a:hover h5 {color: #000000;}
+.section02 > a:hover .imgbox1 {filter: brightness(100%);}
+.section02 > a:hover .imgbox1 > img {scale: 110%;}
+
+/* 사이드바 선택항목 */
+.select {color: rgb(255, 0, 0);}
+.colselect::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  height: 2px;
+  width: 4vw;
+  left: 2.5vw;
+}
+.colselect::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  height: 2px;
+  width: 0vw;
+  left: 2.5vw;
+  transition: width 0.3s;
+}
+
+/* 네비게이션 선택항목 */
+.navselect a::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+}
+.navselect a:link {text-decoration: none; color: orange; font-weight: 700;}
+.navselect a:visited {text-decoration: none; color: orange; font-weight: 700;}
+
+
+@media (max-width:1199px) {
+
+  aside {display: none;}
+  .nav {display: none;}
+  .navbar {display: inline-block;}
+ 
+ }

@@ -1,0 +1,296 @@
+.section01 {
+  color: rgb(173, 173, 173);
+  font-size: 5rem;
+  font-weight: 500;
+  border-bottom: black solid 1px;
+  box-sizing: border-box;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+.bgbox {z-index: -1; width: 100%; height: 100%; filter: brightness(100%); position: absolute; transition: all 0.3s;}
+.bgbox > img {width: 100%;}
+.title {
+  position: absolute;
+  margin: 4% 0% 5% 5%;
+  font-size: 5rem;
+}
+.explanation {
+  /* border: solid 1px red; */
+  margin-top: 65px;
+  width: 100%;
+  height: 75%;
+  font-size: 1.3rem;
+  line-height: 170%;
+  /* letter-spacing: 0.5px; */
+}
+.ex1 {
+  position: absolute;
+  margin: 4% 0% 5% 5.5%;
+  top: 120px;
+} 
+.section01 .black {color: rgb(255, 255, 255); position: relative; transition: all 0.3s;}
+.line::before {
+  content: '';
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  width: 0;
+  height: 75px;
+  position: absolute;
+  /* top: 150px; */
+  /* left: 40; */
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+.red {color: red;}
+.yellow { transition: all 0.3s; font-weight: 700; position: relative; }
+.yellow::after {
+  display: inline-block;
+  content: '';
+  background-color: rgb(255, 208, 0);
+  position: absolute;
+  width: 0%;
+  height: 25px;
+  margin-top: 4px;
+  left: 0%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.section01:hover .yellow::after {width: 100%;}
+.section01:hover .yellow {color: rgb(0, 0, 0);}
+.section01:hover .bgbox{filter: brightness(50%);}
+.section01:hover .line::before { width: 210px;}
+.section01:hover .black { color: #ff0000; }
+
+
+/* 섹션2 */
+.section02 {
+  /* border-top: #000000 solid 1px; */
+  width: 90%;
+  height: 800px;
+  margin: 0 5%;
+  box-sizing: border-box;
+  /* border: red solid 2px; */
+  /* margin-bottom: 10%; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+}
+/* 콘텐츠01 */
+.content01 {
+  display: flex;
+  align-items: center;
+  height: 800px;
+  width: 30%;
+  box-sizing: border-box;
+  border-right: #000000 solid 1px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 2% 2% 0;
+  /* border: #000000 2px solid; */
+}
+.title2 {
+  /* border: solid 1px red; */
+  font-size: 2rem;
+  font-family: 'ChosunSm';
+}
+.num {
+  width: 100%;
+  margin: 0 0 10% 0;
+  padding-bottom: 10%;
+  border-bottom: #000000 solid 1px;
+}
+.num::before {
+  display: inline-block;
+  content: '1';
+  width: 35px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.imgbox2 {
+  /* border: #000000 solid 1px; */
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  /* filter: brightness(20%); */
+  position: relative;
+  background-color: #000000;
+}
+.imgbox2::before {
+  content: '흰 색과 빨강';
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.imgbox2 > img {position: absolute; width: 100%; height: 100%; opacity: 0.2; transition: all 0.3s ease-in-out;}
+.imgbox2:hover::before {opacity: 0;}
+.imgbox2:hover > img {opacity: 1;}
+.ex2 {
+  margin-top: 10%;
+  height: 300px;
+  font-size: 1.1vw;
+}
+.content01:hover .yellow {
+  background-color: rgb(255, 231, 125);
+}
+
+
+
+/* 콘텐츠02 */
+.content02 {
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border-left: #000000 solid 1px; */
+  padding: 50px 2% 2% 2%;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+.title3 {
+  font-size: 5rem;
+  margin-left: 2%;
+}
+.num2 {
+  width: 100%;
+  margin: 0 0 10% 0;
+  padding-bottom: 7%;
+  border-bottom: #000000 solid 1px;
+}
+.num2::before {
+  display: inline-block;
+  content: '2';
+  width: 35px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.ex4 {
+  /* border: 1px solid red; */
+  /* height: 200px; */
+  width: 90%;
+  position: absolute;
+  top: 140px;
+  z-index: -1;
+}
+.imgbox3 {
+  border: #000000 solid 1px;
+  position: absolute;
+  right: 0;
+  width: 70%;
+  height: 500px;
+  overflow: hidden;
+}
+.imgbox3 > img {width: 800px;}
+.bgtext {
+  font-size: 10rem;
+  color: #e6e6e6;
+  position: absolute;
+  z-index: -1;
+  font-weight: 700;
+  width: 20%;
+  line-height: 100%;
+}
+.text1 {
+  position: absolute;
+  left: 50px;
+  bottom: -30px;
+}
+.text2 {
+  position: absolute;
+  left: 200px;
+  bottom: 50px;
+  font-weight: 400;
+  font-size: 8rem;
+}
+.text3 {
+  position: absolute;
+  display: inline;
+  width: 100%;
+  left: 520px;
+}
+
+/* 사이드바 선택항목 */
+.select {color: rgb(255, 208, 0);}
+.colselect::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255, 208, 0);
+  border-radius: 10px;
+  height: 2px;
+  width: 4vw;
+  left: 2.5vw;
+}
+.colselect::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(255, 208, 0);
+  border-radius: 10px;
+  height: 2px;
+  width: 0vw;
+  left: 2.5vw;
+  transition: width 0.3s;
+}
+
+/* 네비게이션 선택항목 */
+.navselect a::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+}
+.navselect a:link {text-decoration: none; color: orange; font-weight: 700;}
+.navselect a:visited {text-decoration: none; color: orange; font-weight: 700;}
+
+
+@media (max-width:1199px) {
+
+  aside {display: none;}
+  .nav {display: none;}
+  .navbar {display: inline-block;}
+  .main {margin-left: 0%; width: 100%;}
+  footer {margin-left: 0; padding: 0; padding-right:10%; border: none;}
+
+  .section01 {margin-left: 0; height: 600px; width: 90%; margin: 0;}
+  .bgbox > img {height: 600px; width: 1200px;}
+  .section01 > p {height: 40%; padding-top: 200px;}
+  .section02 {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 0;
+    margin: 0;
+    border-left: #000000 solid 1px;
+    border-right: #000000 solid 1px;
+    padding-left: 20px;
+    border-bottom: #000000 solid 1px;
+  }
+  /* .imgbox2 > img {height: 500px; width: 900px;} */
+  .title2 {padding-bottom: 50px; margin-bottom: 20px; margin-top: 20px;}
+  .num::before {width: 8vw; height: 8vw;}
+  .imgbox2 {padding: 0;}
+  .ex2 {margin-top: 20px; height: 100%; font-size: 2vw;  border-bottom: 1px solid black;}
+  .ex3 {margin: 0; height: 100%;}
+  .title2 {font-size: 7vw;}
+  .content01 {width: 100%; height: 100%; border: none; }
+  .content02 {width: 97%; height: 750px; margin: 0; padding: 0;}
+}

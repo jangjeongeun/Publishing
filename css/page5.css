@@ -1,0 +1,108 @@
+.section01 {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-weight: 500;
+  border-bottom: black solid 1px;
+  box-sizing: border-box;
+  margin: 0 5%;
+  padding: 4% 0% 5% 0%;
+  /* width: 90%; */
+}
+.title {
+  font-size: 6rem;
+  left: -4px;
+  font-weight: 500;
+  font-family: 'Pretendard';
+  top: 10px;
+}
+
+/* 섹션02 */
+.section02 {
+  height: 100%;
+  margin: 0 5%;
+  padding: 4% 0% 0% 0%;
+  /* border-bottom: black solid 1px; */
+}
+.content02 {
+  margin-top: 40px;
+  width: 100%;
+  /* border: rgb(255, 0, 0) solid 1px; */
+}
+.bookbox {position: relative; margin: 2%;}
+.imgbox {
+  width: 300px;
+  height: 380px;
+  overflow: hidden;
+  border: rgb(0, 0, 0) solid 1px;
+}
+.imgbox > img {width: 100%; filter: brightness(100%); transition: all 0.3s;}
+.ex {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0px;
+  padding: 3%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.bookbox:hover img {filter: brightness(20%);}
+.bookbox:hover .ex {opacity: 1;}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  /* border: rgb(85, 67, 255) solid 1px; */
+  justify-content: space-between;
+  width: 100%;
+}
+.title2 {
+  border-bottom: black solid 1px;
+  font-size: 2rem;
+  padding-bottom: 1%;
+}
+
+
+/* 사이드바 선택항목 */
+.select {color: red;}
+.colselect::before {
+  content: '';
+  position: absolute;
+  background-color: red;
+  border-radius: 10px;
+  height: 2px;
+  width: 4vw;
+  left: 2.5vw;
+}
+.colselect::after {
+  content: '';
+  position: absolute;
+  background-color:red;
+  border-radius: 10px;
+  height: 2px;
+  width: 0vw;
+  left: 2.5vw;
+  transition: width 0.3s;
+}
+
+/* 네비게이션 선택항목 */
+.navselect a::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+}
+.navselect a:link {text-decoration: none; color:blue; font-weight: 700;}
+.navselect a:visited {text-decoration: none; color: blue; font-weight: 700;}
+
+
+@media (max-width:1199px) {
+
+  aside {display: none;}
+  .nav {display: none;}
+  .navbar {display: inline-block;}
+ 
+ }

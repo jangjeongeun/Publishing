@@ -1,0 +1,22 @@
+.videobox {position: absolute; height: 100%; width: 100%; filter: grayscale(1);}
+.videobox > video {filter: brightness(50%);}
+
+.section01 {width: 100%; height: 1000px; position: relative; overflow: hidden;}
+.title {
+ position: absolute;
+ color: white;
+ font-size: 8rem;
+ top: 17%;
+ padding: 5%;
+}
+
+@media (max-width:1199px) {
+
+ aside {display: none;}
+ .nav {display: none;}
+ .navbar {display: inline-block;}
+ .main {margin-left: 0%; width: 100%;}
+ footer {margin-left: 0; padding: 0; padding-right:10%; border: none;}
+ .section01 {margin: 0; width: 90%;box-sizing: border-box;}
+ .title {top: 25%;}
+}
